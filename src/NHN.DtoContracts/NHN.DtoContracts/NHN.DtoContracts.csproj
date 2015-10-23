@@ -48,8 +48,6 @@
     <Compile Include="Common\en\Business.cs" />
     <Compile Include="Common\en\Code.cs" />
     <Compile Include="Common\CommonXmlNamespaces.cs" />
-    <Compile Include="Common\en\CommunicationParty.cs" />
-    <Compile Include="Common\en\CommunicationPartyType.cs" />
     <Compile Include="Common\en\ElectronicAddress.cs" />
     <Compile Include="Common\en\GenericFault.cs" />
     <Compile Include="Common\en\Person.cs" />

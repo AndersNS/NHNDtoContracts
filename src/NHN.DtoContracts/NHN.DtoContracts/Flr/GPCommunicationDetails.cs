@@ -8,18 +8,6 @@ namespace NHN.DtoContracts.Flr
     public class GPCommunicationDetails
     {
         /// <summary>
-        /// Kommunikasjonspart til fastlege
-        /// </summary>
-        [DataMember]
-        public CommunicationParty CommunicationParty { get; set; }
-
-        /// <summary>
-        /// CPP til fastlege
-        /// </summary>
-        //[DataMember]
-        //public CollaborationProtocolProfile CPP { get; set; }
-
-        /// <summary>
         /// Fastlegekontor til fastlege
         /// </summary>
         [DataMember]
