@@ -24,12 +24,13 @@ namespace NHN.DtoContracts.Flr
         GPDetailsWithStatus GetPatientGPDetailsWithStatus(string patientNin);
 
         /// <summary>
-        /// Henter fastlegens kommunikasjonspart.
+        /// Henter kommunikasjonsdetaljer til fastlege basert på FNR/DNR til pasient.
         /// </summary>
-        /// <param name="hprNumber">Legens HPR-nummer</param>
+        /// <param name="ssn">FNR/DNR for pasient</param>
+        /// <returns>Kommunikasjonsdetaljer for gitt fastlege.</returns>
         [OperationContract]
         [FaultContract(typeof(GenericFault))]
-        GPCommunicationDetails GetGPCommunicationDetails(int hprNumber);
+        GPCommunicationDetails GetGPCommunicationDetails(int ssn);
 
         /// <summary>
         /// Henter fastlegebytte historikken
