@@ -26,11 +26,11 @@ namespace NHN.DtoContracts.Flr
         /// <summary>
         /// Henter kommunikasjonsdetaljer til fastlege basert på FNR/DNR til pasient.
         /// </summary>
-        /// <param name="ssn">FNR/DNR for pasient</param>
+        /// <param name="patientNin">FNR/DNR for pasient</param>
         /// <returns>Kommunikasjonsdetaljer for gitt fastlege.</returns>
         [OperationContract]
         [FaultContract(typeof(GenericFault))]
-        GPCommunicationDetails GetGPCommunicationDetails(int ssn);
+        GPCommunicationDetails GetGPCommunicationDetails(int patientNin);
 
         /// <summary>
         /// Henter fastlegebytte historikken
