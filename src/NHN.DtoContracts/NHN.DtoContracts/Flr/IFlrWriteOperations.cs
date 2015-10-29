@@ -36,7 +36,7 @@ namespace NHN.DtoContracts.Flr
         //SettFastlegeListeStatus
         [OperationContract]
         [FaultContract(typeof(GenericFault))]
-        void UpdateGPContractStatus(int gpContractId, Code status); //Kun tillate Åpne, Lukke 
+        void UpdateGPContractStatus(int gpContractId, ListStatus status); //Kun tillate Åpne, Lukke 
 
 
         // --------------------------
