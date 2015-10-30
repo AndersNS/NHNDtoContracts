@@ -42,6 +42,15 @@ namespace NHN.DtoContracts.Flr
         ICollection<PatientToGPContractAssociation> GetPatientGPHistory(string patientNin);
 
         /// <summary>
+        /// Henter en enkelt fastlegeavtale
+        /// </summary>
+        /// <param name="gpContractId">Kontraktens id.</param>
+        /// <returns></returns>
+        [OperationContract]
+        [FaultContract(typeof(GenericFault))]
+        GPContract GetGPContract(int gpContractId);
+
+        /// <summary>
         /// Henter fastlegeavtaler tilknyttet virksomheten.
         /// </summary>
         /// <param name="organizationNumber"></param>
