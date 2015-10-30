@@ -33,7 +33,7 @@ namespace NHN.DtoContracts.Flr
         /// Hvis det kreves medlemskap for være på en liste, så er innholdet av RequiresMembership satt til ID'en for dette medlemskapet.
         /// </summary>
         [DataMember]
-        public string RequiresMembership { get; set; }
+        public Code RequiresMembership { get; set; }
 
         /// <summary>
         /// Organisasjonsnummer. Dette er orgnummeret en vil finne i Adresseregisteret og eventuelt RESH.
