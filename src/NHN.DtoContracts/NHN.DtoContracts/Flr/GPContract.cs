@@ -36,10 +36,11 @@ namespace NHN.DtoContracts.Flr
         public Code RequiresMembership { get; set; }
 
         /// <summary>
-        /// Organisasjonsnummer. Dette er orgnummeret en vil finne i Adresseregisteret og eventuelt RESH.
+        /// Legekontor.
+        /// Orgnummeret vil en finne i Adresseregisteret og eventuelt RESH.
         /// </summary>
         [DataMember]
-        public int TreatmentCenterOrgNr { get; set; }
+        public Business TreatmentCenter { get; set; }
 
         /// <summary>
         /// Listetak
