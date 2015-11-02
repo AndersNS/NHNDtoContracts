@@ -87,7 +87,7 @@ namespace NHN.DtoContracts.Flr
         /// Kommune
         /// </summary>
         [DataMember]
-        public Code Municipality { get; set; }
+        public Business Municipality { get; set; }
 
         /// <summary>
         /// Bydel
