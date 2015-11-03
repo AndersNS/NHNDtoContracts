@@ -64,7 +64,6 @@
     <Compile Include="Common\en\OpeningHours.cs" />
     <Compile Include="Common\en\Period.cs" />
     <Compile Include="Flr\IFlrReadOperations.cs" />
-    <Compile Include="Flr\ListStatus.cs" />
     <Compile Include="Flr\OutOfOfficeLocation.cs" />
     <Compile Include="Flr\PatientStatus.cs" />
     <Compile Include="Flr\PatientToGPContractAssociation.cs" />

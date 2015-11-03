@@ -52,7 +52,7 @@ namespace NHN.DtoContracts.Flr
         /// Listestatus.
         /// </summary>
         [DataMember]
-        public ListStatus Status { get; set; }
+        public Code Status { get; set; }
 
         /// <summary>
         /// Navn på listen. ??? Trenger vi dette?
