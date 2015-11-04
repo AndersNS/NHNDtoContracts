@@ -125,6 +125,15 @@ namespace NHN.DtoContracts.Flr
         /// </summary>
         [OperationContract]
         [FaultContract(typeof(GenericFault))]
-        void CancelPatientOnGPContract(int gpContractId, string patientNin, Code lastChangeCode); 
+        void CancelPatientOnGPContract(int gpContractId, string patientNin, Code lastChangeCode);
+
+        /// <summary>
+        /// Brukes for å sette visningsnavnet på et legekontor. Merk at legekontoret selv kan overskrive det som eventuelt settes her selv.
+        /// </summary>
+        /// <param name="organizationNumber">Organisasjonsnummer til legekontoret</param>
+        /// <param name="displayName">Visningsnavnet man ønsker sette. Maks 150 tegn.</param>
+        [OperationContract]
+        [FaultContract(typeof (GenericFault))]
+        void SetDisplayNameOnGPOffice(int organizationNumber, string displayName);
     }
 }

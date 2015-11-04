@@ -21,6 +21,10 @@ namespace NHN.DtoContracts.Flr
         [DataMember]
         public Business Business { get; set; }
 
+
+        [DataMember]
+        public Code Status { get; set; }
+
         /// <summary>
         /// Gyldighetsperiode
         /// </summary>

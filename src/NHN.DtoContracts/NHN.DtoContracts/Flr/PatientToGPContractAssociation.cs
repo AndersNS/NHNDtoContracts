@@ -38,5 +38,11 @@ namespace NHN.DtoContracts.Flr
         /// </summary>
         [DataMember]
         public Code LastChangeCode { get; set; }
+
+        /// <summary>
+        /// Detaljer om pasienten. Dette vil være satt på leseoperasjoner, men må være NULL på skriveoperasjoner.
+        /// </summary>
+        [DataMember]
+        public Patient Patient { get; set; } 
     }
 }

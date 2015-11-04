@@ -17,13 +17,6 @@ namespace NHN.DtoContracts.Flr
         GPDetails GetPatientGPDetails(string patientNin);
 
         /// <summary>
-        /// Henter fastlege med status for gitt person. Skal ikke publiseres.
-        /// </summary>
-        /// <param name="patientNin"></param>
-        /// <returns></returns>
-        GPDetailsWithStatus GetPatientGPDetailsWithStatus(string patientNin);
-
-        /// <summary>
         /// Henter kommunikasjonsdetaljer til fastlege basert på FNR/DNR til pasient.
         /// </summary>
         /// <param name="patientNin">FNR/DNR for pasient</param>
@@ -69,7 +62,7 @@ namespace NHN.DtoContracts.Flr
         ICollection<PatientToGPContractAssociation> GetGPPatientList(int gpContractId);
 
         /// <summary>
-        /// Henter fastlege og tilhørende praksis
+        /// Henter fastlege og tilhørende praksis(er)
         /// </summary>
         /// <param name="hprNumber">Legens HPR-nummer.</param>
         /// <returns></returns>

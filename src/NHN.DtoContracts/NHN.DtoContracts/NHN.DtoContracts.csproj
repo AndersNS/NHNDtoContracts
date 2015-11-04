@@ -65,7 +65,7 @@
     <Compile Include="Common\en\Period.cs" />
     <Compile Include="Flr\IFlrReadOperations.cs" />
     <Compile Include="Flr\OutOfOfficeLocation.cs" />
-    <Compile Include="Flr\PatientStatus.cs" />
+    <Compile Include="Flr\Patient.cs" />
     <Compile Include="Flr\PatientToGPContractAssociation.cs" />
     <Compile Include="Common\en\PhysicalAddress.cs" />
     <Compile Include="Flr\GPContract.cs" />
